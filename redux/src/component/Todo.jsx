@@ -6,7 +6,7 @@ const Todos = () => {
   const todos = useSelector(state => state.todos);
   const dispatch = useDispatch();
 
-  const storedInput = localStorage.getItem("todos");
+  const storedInput = localStorage.getItem("todos")
 
   return (
     <>

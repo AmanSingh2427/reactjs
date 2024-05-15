@@ -8,7 +8,7 @@ function AddTodo() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem('todos'));
+    const storedTodos = JSON.parse(localStorage.getItem('todos'))
     if (storedTodos) {
       setTodos(storedTodos);
     }
