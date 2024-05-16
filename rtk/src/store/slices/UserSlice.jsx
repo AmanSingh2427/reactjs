@@ -11,12 +11,12 @@ const userSlice=createSlice({
         removeUser(state,action){
             console.log('hI'+action.payload)
             // state.pop(action.payload)
-            state.splice(action.payload,1)
+            state.splice(action.payload)
         },
         deleteUser(state,action){
             console.log("Hello delete all user")
             return []
-        },
+        },                             
     }
 })
 console.log(userSlice.actions)
